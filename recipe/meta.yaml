@@ -11,8 +11,8 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - enaml-run = enaml.runner:main
   osx_is_app: True
@@ -21,8 +21,11 @@ build:
 
 requirements:
   build:
+      - {{ compiler('cxx') }}
+  host:
     - python
     - setuptools
+    - pip
     - atom >=0.4.1
     - kiwisolver >=1.0.0
     - ply >=3.4
