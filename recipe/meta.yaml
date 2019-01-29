@@ -1,6 +1,6 @@
 {% set name = "enaml" %}
-{% set version = "0.10.2" %}
-{% set sha256 = "f10e7c711c34f76618f54aa88aafde5e931aba2bbe8ace844f42160676f63007" %}
+{% set version = "0.10.3" %}
+{% set sha256 = "9a3a16f859372f50b1cb2868ea033f8e3724ce0cc8dbdd0dae0cb5f407b44a27" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -26,20 +26,18 @@ requirements:
     - python
     - setuptools
     - pip
-    - atom >=0.4.1
+    - atom >=0.4.2
     - kiwisolver >=1.0.0
     - ply >=3.4
-    - future
     - qtpy >=1.3
   run:
     - python
     - python.app  # [osx]
-    - atom >=0.4.1
+    - atom >=0.4.2
     - pyqt
     - qtpy >=1.3
     - kiwisolver >=1.0.0
     - ply >=3.4
-    - future
 
 test:
   commands:
