@@ -1,6 +1,6 @@
 {% set name = "enaml" %}
-{% set version = "0.10.2" %}
-{% set sha256 = "f10e7c711c34f76618f54aa88aafde5e931aba2bbe8ace844f42160676f63007" %}
+{% set version = "0.10.3" %}
+{% set sha256 = "9a3a16f859372f50b1cb2868ea033f8e3724ce0cc8dbdd0dae0cb5f407b44a27" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
   entry_points:
     - enaml-run = enaml.runner:main
