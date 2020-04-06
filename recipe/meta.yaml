@@ -1,6 +1,6 @@
 {% set name = "enaml" %}
-{% set version = "0.10.4" %}
-{% set sha256 = "6733ff89cf3e3000ae7e8ea7fc8a9d1aef57cce1a5df1a3e986518aea29776ec" %}
+{% set version = "0.11.0" %}
+{% set sha256 = "beb98cdda850f2ea16dc633503e26e8cc647d57ac25b227c9033c1b89709bb76" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -12,12 +12,12 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - enaml-run = enaml.runner:main
-  osx_is_app: True
+  osx_is_app: true
   skip_compile_pyc:
-    - "*/enaml/core/byteplay/*.py"
+    - '*/enaml/core/byteplay/*.py'
 
 requirements:
   build:
