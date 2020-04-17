@@ -45,14 +45,11 @@ test:
     - enaml-run --help
   imports:
     - enaml
-    - enaml.callableref
     - enaml.colorext
     - enaml.core.alias
     - enaml.core.dynamicscope
     - enaml.core.funchelper
     - enaml.fontext
-    - enaml.signaling
-    - enaml.weakmethod
     - enaml.core.api
     - enaml.widgets.api
     - enaml.layout.api
