@@ -45,6 +45,9 @@ test:
     - enaml-run --help
   imports:
     - enaml
+    - enaml.callableref
+    - enaml.weakmethod
+    - enaml.signaling
     - enaml.colorext
     - enaml.core.alias
     - enaml.core.dynamicscope
@@ -56,7 +59,7 @@ test:
 
 about:
   home: https://github.com/nucleic/enaml
-  license: BSD-3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Declarative DSL for building rich user interfaces in Python
