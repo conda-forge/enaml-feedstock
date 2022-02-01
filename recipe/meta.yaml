@@ -16,6 +16,7 @@ build:
   entry_points:
     - enaml-run = enaml.runner:main
   osx_is_app: true
+  skip: true  # [py!=37]
 
 requirements:
   build:
