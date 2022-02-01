@@ -219,5 +219,6 @@ Feedstock Maintainers
 * [@MatthieuDartiailh](https://github.com/MatthieuDartiailh/)
 * [@blink1073](https://github.com/blink1073/)
 * [@licode](https://github.com/licode/)
+* [@marcelotrevisani](https://github.com/marcelotrevisani/)
 * [@tacaswell](https://github.com/tacaswell/)
 
