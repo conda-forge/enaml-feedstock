@@ -1,6 +1,6 @@
 {% set name = "enaml" %}
-{% set version = "0.14.1" %}
-{% set sha256 = "93dff8dcc7f6f70510823d3d76beb805087208bb28f5a6c51e186bfd72c91748" %}
+{% set version = "0.15.0" %}
+{% set sha256 = "845b5e9f6c51c751cad775603327b64baa9505a71ba0c5cb0d96cd94e7e79970" %}
 
 package:
   name: {{ name|lower }}
