@@ -17,7 +17,7 @@ build:
     - enaml-run = enaml.runner:main
     - enaml-compileall = enaml.compile_all:main
   osx_is_app: true
-  skip: true  # [py<37]
+  skip: true  # [py<38]
 
 requirements:
   build:
@@ -30,12 +30,12 @@ requirements:
   run:
     - python
     - python.app  # [osx]
-    - atom >=0.7.0
+    - atom >=0.8.0
     - pyqt
     - qtpy >=1.3
     - kiwisolver >=1.2.0
     - ply >=3.4
-    - bytecode
+    - bytecode >=0.13.0
 
 test:
   commands:
