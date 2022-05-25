@@ -27,6 +27,7 @@ requirements:
     - setuptools
     - pip
     - cppy >=1.1.0
+    - setuptools-scm
   run:
     - python
     - python.app  # [osx]
@@ -41,6 +42,7 @@ test:
   commands:
     - enaml-run --help
     - enaml-compileall --help
+    - pip check
   imports:
     - enaml
     - enaml.callableref
@@ -54,6 +56,8 @@ test:
     - enaml.core.api
     - enaml.widgets.api
     - enaml.layout.api
+  requires:
+    - pip
 
 
 about:
