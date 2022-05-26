@@ -42,7 +42,6 @@ test:
   commands:
     - enaml-run --help
     - enaml-compileall --help
-    - pip check
   imports:
     - enaml
     - enaml.callableref
@@ -56,8 +55,6 @@ test:
     - enaml.core.api
     - enaml.widgets.api
     - enaml.layout.api
-  requires:
-    - pip
 
 
 about:
