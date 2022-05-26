@@ -1,6 +1,6 @@
 {% set name = "enaml" %}
-{% set version = "0.14.1" %}
-{% set sha256 = "93dff8dcc7f6f70510823d3d76beb805087208bb28f5a6c51e186bfd72c91748" %}
+{% set version = "0.15.0" %}
+{% set sha256 = "845b5e9f6c51c751cad775603327b64baa9505a71ba0c5cb0d96cd94e7e79970" %}
 
 package:
   name: {{ name|lower }}
@@ -17,7 +17,7 @@ build:
     - enaml-run = enaml.runner:main
     - enaml-compileall = enaml.compile_all:main
   osx_is_app: true
-  skip: true  # [py<37]
+  skip: true  # [py<38]
 
 requirements:
   build:
@@ -27,21 +27,21 @@ requirements:
     - setuptools
     - pip
     - cppy >=1.1.0
+    - setuptools-scm
   run:
     - python
     - python.app  # [osx]
-    - atom >=0.7.0
+    - atom >=0.8.0
     - pyqt
     - qtpy >=1.3
     - kiwisolver >=1.2.0
     - ply >=3.4
-    - bytecode
+    - bytecode >=0.13.0
 
 test:
   commands:
     - enaml-run --help
     - enaml-compileall --help
-    - pip check
   imports:
     - enaml
     - enaml.callableref
@@ -55,8 +55,7 @@ test:
     - enaml.core.api
     - enaml.widgets.api
     - enaml.layout.api
-  requires:
-    - pip
+
 
 about:
   home: https://github.com/nucleic/enaml
@@ -74,3 +73,4 @@ extra:
     - MatthieuDartiailh
     - tacaswell
     - marcelotrevisani
+    - gabrielcnr
