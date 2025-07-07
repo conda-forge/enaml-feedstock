@@ -17,7 +17,7 @@ build:
     - enaml-run = enaml.runner:main
     - enaml-compileall = enaml.compile_all:main
   osx_is_app: true
-  skip: true  # [py<38]
+  skip: true  # [py<310]
 
 requirements:
   build:
