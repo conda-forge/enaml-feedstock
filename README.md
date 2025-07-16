@@ -250,6 +250,3 @@ Feedstock Maintainers
 * [@marcelotrevisani](https://github.com/marcelotrevisani/)
 * [@tacaswell](https://github.com/tacaswell/)
 
-
-<!-- dummy commit to enable rerendering -->
-
