@@ -1,17 +1,17 @@
 {% set name = "enaml" %}
-{% set version = "0.19.0" %}
-{% set sha256 = "d20e93a1b34e8d800a6218d4bcfa030d3294979c6f901285fc4d3c71fabdcec2" %}
+{% set version = "0.20.0" %}
+{% set sha256 = "3c6efc1e90c8f8a409c27507e897c1d4a888b823feb61dfb4c167bad83f62f0d" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
   entry_points:
     - enaml-run = enaml.runner:main
